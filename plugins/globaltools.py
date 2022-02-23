@@ -431,7 +431,7 @@ async def _(e):
     await xx.edit(gb_msg)
 
 
-@ultroid_cmd(pattern="g(admin|)cast( (.*)|$)", fullsudo=True)
+@ultroid_cmd(pattern="g(admin|)cast( (.*)|$)")
 async def gcast(event):
     text, btn, reply = "", None, None
     xx = event.pattern_match.group(2)
@@ -516,7 +516,7 @@ async def gcast(event):
     await kk.edit(text)
 
 
-@ultroid_cmd(pattern="gucast( (.*)|$)", fullsudo=True)
+@ultroid_cmd(pattern="gucast( (.*)|$)")
 async def gucast(event):
     msg, btn, reply = "", None, None
     xx = event.pattern_match.group(1).strip()
